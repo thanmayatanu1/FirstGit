@@ -1,3 +1,14 @@
-localStorage.setItem('userName' , 'obj.Name');
-localStorage.setItem('Email', 'obj.Email');
-localStorage.setItem('Submit', 'obj.Submit');
+function saveToLocalStorage(event)
+{
+    event.preventDefault();
+    const name = event.target.username.value;
+    const email = event.target.email.value;
+    localStorage.setItem('name' , name);
+    localStorage.setItem('email', email);
+}
+
+
+
+
+
+
